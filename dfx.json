@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "HelloContract_backend": {
+      "main": "src/HelloContract_backend/main.mo",
+      "type": "motoko"
+    },
+    "HelloContract_frontend": {
+      "dependencies": [
+        "HelloContract_backend"
+      ],
+      "source": [
+        "src/HelloContract_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "HelloContract_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
